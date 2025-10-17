@@ -3,14 +3,14 @@ document.getElementById("botonSaludo").addEventListener("click", () => {
 
   if (nombre) {
       localStorage.setItem("nombreUsuario", nombre);
-      document.getElementById("mensaje").textContent = `¡Hola, ${nombre}! Bienvenido a mi página 😄`;
+      document.getElementById("mensaje").textContent = `¡Hola, ${nombre}! Bienvenido a mi práctica 😄`;
   } else {
       document.getElementById("mensaje").textContent = "¡Hola extraño!";
   }
 });
 
 document.getElementById("botonCambiar").addEventListener("click", () => {
-  const colores = ["#ffb3b3", "#b3ffb3", "#b3d9ff", "#fff0b3", "#e0b3ff"];
+  const colores = ["#FFEBCD", "#5F9EA0", "#D2691E", "#BDB76B", "#556B2F"];
   const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
   document.body.style.backgroundColor = colorAleatorio;
 });
@@ -35,5 +35,5 @@ const sonido = document.getElementById("sonido");
 
 botonSonido.addEventListener("click", () => {
   sonido.play();
-  alert("¡Que no des click! ¡Ya despertaste a los vecinos!");
+  alert("¡Te dije que no dieras click! 🤣");
 });
